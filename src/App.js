@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import NavBar from './component/NavBar/NavBar';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
