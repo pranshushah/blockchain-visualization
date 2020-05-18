@@ -1,0 +1,41 @@
+{
+  "files": {
+    "static/js/0.a99b9117.chunk.js": "/blockchain-visualization/static/js/0.a99b9117.chunk.js",
+    "static/js/0.a99b9117.chunk.js.map": "/blockchain-visualization/static/js/0.a99b9117.chunk.js.map",
+    "main.css": "/blockchain-visualization/static/css/main.292e3e7f.chunk.css",
+    "main.js": "/blockchain-visualization/static/js/main.e2c67241.chunk.js",
+    "main.js.map": "/blockchain-visualization/static/js/main.e2c67241.chunk.js.map",
+    "runtime-main.js": "/blockchain-visualization/static/js/runtime-main.7cc5dfc2.js",
+    "runtime-main.js.map": "/blockchain-visualization/static/js/runtime-main.7cc5dfc2.js.map",
+    "static/js/3.6d1abec0.chunk.js": "/blockchain-visualization/static/js/3.6d1abec0.chunk.js",
+    "static/js/3.6d1abec0.chunk.js.map": "/blockchain-visualization/static/js/3.6d1abec0.chunk.js.map",
+    "static/css/4.16c3cd96.chunk.css": "/blockchain-visualization/static/css/4.16c3cd96.chunk.css",
+    "static/js/4.e0d78faa.chunk.js": "/blockchain-visualization/static/js/4.e0d78faa.chunk.js",
+    "static/js/4.e0d78faa.chunk.js.map": "/blockchain-visualization/static/js/4.e0d78faa.chunk.js.map",
+    "static/css/5.16c3cd96.chunk.css": "/blockchain-visualization/static/css/5.16c3cd96.chunk.css",
+    "static/js/5.88fbe39a.chunk.js": "/blockchain-visualization/static/js/5.88fbe39a.chunk.js",
+    "static/js/5.88fbe39a.chunk.js.map": "/blockchain-visualization/static/js/5.88fbe39a.chunk.js.map",
+    "static/css/6.0af60fa8.chunk.css": "/blockchain-visualization/static/css/6.0af60fa8.chunk.css",
+    "static/js/6.0facfcdd.chunk.js": "/blockchain-visualization/static/js/6.0facfcdd.chunk.js",
+    "static/js/6.0facfcdd.chunk.js.map": "/blockchain-visualization/static/js/6.0facfcdd.chunk.js.map",
+    "static/css/7.528fe62e.chunk.css": "/blockchain-visualization/static/css/7.528fe62e.chunk.css",
+    "static/js/7.203fd175.chunk.js": "/blockchain-visualization/static/js/7.203fd175.chunk.js",
+    "static/js/7.203fd175.chunk.js.map": "/blockchain-visualization/static/js/7.203fd175.chunk.js.map",
+    "index.html": "/blockchain-visualization/index.html",
+    "precache-manifest.fafb091731a3c6d1423db431f6390bef.js": "/blockchain-visualization/precache-manifest.fafb091731a3c6d1423db431f6390bef.js",
+    "service-worker.js": "/blockchain-visualization/service-worker.js",
+    "static/css/4.16c3cd96.chunk.css.map": "/blockchain-visualization/static/css/4.16c3cd96.chunk.css.map",
+    "static/css/5.16c3cd96.chunk.css.map": "/blockchain-visualization/static/css/5.16c3cd96.chunk.css.map",
+    "static/css/6.0af60fa8.chunk.css.map": "/blockchain-visualization/static/css/6.0af60fa8.chunk.css.map",
+    "static/css/7.528fe62e.chunk.css.map": "/blockchain-visualization/static/css/7.528fe62e.chunk.css.map",
+    "static/css/main.292e3e7f.chunk.css.map": "/blockchain-visualization/static/css/main.292e3e7f.chunk.css.map",
+    "static/js/0.a99b9117.chunk.js.LICENSE.txt": "/blockchain-visualization/static/js/0.a99b9117.chunk.js.LICENSE.txt",
+    "static/js/3.6d1abec0.chunk.js.LICENSE.txt": "/blockchain-visualization/static/js/3.6d1abec0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cc5dfc2.js",
+    "static/js/3.6d1abec0.chunk.js",
+    "static/css/main.292e3e7f.chunk.css",
+    "static/js/main.e2c67241.chunk.js"
+  ]
+}
