@@ -1,0 +1,20 @@
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 10vh;
+  background: #1d90dd;
+}
+
+.navLinks {
+  display: flex;
+  min-height: 10vh;
+  justify-content: center;
+  width: 90%;
+  align-items: stretch;
+}
+
+.active {
+  border-bottom: 5px solid rgb(226, 226, 226);
+  background-color: #57a8df;
+}

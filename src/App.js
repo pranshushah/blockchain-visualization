@@ -1,25 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { lazy, Suspense } from 'react';
+import NavBar from './component/NavBar/NavBar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import './App.css';
+import Spinner from './component/Spinner/Spinner';
+
+const LazyHash = lazy(() => import('./component/blockComponent/Hash/Hash'));
+const LazyBlock = lazy(() => import('./component/blockComponent/Block/Block'));
+const LazyBlockChain = lazy(() =>
+  import(
+    './component/blockComponent/BlockChain/BlockChainContainer/BlockChainContainer'
+  ),
+);
+const LazyDistributedBlockChain = lazy(() =>
+  import(
+    './component/blockComponent/DistributedBlockChain/DistributedBlockChain'
+  ),
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Suspense fallback={<Spinner />}>
+        <Switch>
+          <Route exact path='/hash'>
+            <LazyHash />
+          </Route>
+          <Route exact path='/block'>
+            <LazyBlock />
+          </Route>
+          <Route exact path='/blockchain'>
+            <LazyBlockChain heading='BlockChain' />
+          </Route>
+          <Route exact path='/distributed'>
+            <LazyDistributedBlockChain />
+          </Route>
+          <Route path='/' exact>
+            <Redirect to='/hash' />
+          </Route>
+          <Route path='*'>
+            <Redirect to='/hash' />
+          </Route>
+        </Switch>
+      </Suspense>
+    </Router>
   );
 }
 
