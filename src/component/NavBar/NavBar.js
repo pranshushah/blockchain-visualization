@@ -23,11 +23,7 @@ function Navbar() {
           </NavLink>
         </NavigationLink>
         <NavigationLink>
-          <NavLink
-            to='/distributed'
-            style={{ paddingTop: '5%' }}
-            exact
-            activeClassName={Styles.active}>
+          <NavLink to='/distributed' exact activeClassName={Styles.active}>
             DISTRIBUTED BLOCKCHAIN
           </NavLink>
         </NavigationLink>

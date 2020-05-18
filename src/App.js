@@ -22,6 +22,10 @@ const LazyDistributedBlockChain = lazy(() =>
   ),
 );
 
+const LazyCoinBase = lazy(() =>
+  import('./component/blockComponent/Coinbase/Coinbase'),
+);
+
 function App() {
   return (
     <Router>
@@ -39,6 +43,9 @@ function App() {
           </Route>
           <Route exact path='/distributed'>
             <LazyDistributedBlockChain />
+          </Route>
+          <Route>
+            <LazyCoinBase path='/coinbase' />
           </Route>
           <Route path='/' exact>
             <Redirect to='/hash' />
