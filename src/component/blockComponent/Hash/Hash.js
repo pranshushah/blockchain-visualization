@@ -6,12 +6,13 @@ import {
   TextArea,
   Input,
 } from 'semantic-ui-react';
+import useInput from '../../../utils/useInput';
 
 import sha256 from 'crypto-js/sha256';
 import Styles from './hash.module.css';
 
 function Hash() {
-  const [textValue, updateTextValue] = useState('');
+  const [textValue, updateTextValue] = useInput('');
   const [hashValue, updateHash] = useState(sha256('').toString());
 
   function updateTextAndHashValue(e) {

@@ -1,0 +1,23 @@
+.txAmount {
+  display: inline-block;
+  width: 10%;
+  margin-top: 2px !important;
+  padding-left: 0px !important;
+}
+.txInputFrom {
+  display: inline-block;
+  width: 19%;
+  margin-top: 2px !important;
+  padding-left: 0px !important;
+}
+
+.txInputTo {
+  display: inline-block;
+  width: 10%;
+  margin-top: 2px !important;
+  padding-left: 0px !important;
+}
+
+.paddingClass input {
+  padding-left: 1px !important;
+}

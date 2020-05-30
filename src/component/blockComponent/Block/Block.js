@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer, useMemo } from 'react';
 import { Card, CardContent, Input } from 'semantic-ui-react';
 import { TextareaAutosize } from '@material-ui/core';
 import { Container } from 'semantic-ui-react';
@@ -17,7 +17,6 @@ function Block() {
     dirty: false,
     pageLoading: true,
   });
-
   const {
     textValue,
     hashValue,
@@ -36,7 +35,6 @@ function Block() {
   }
 
   useEffect(() => {
-    console.log(buttonLoading);
     if (buttonLoading) {
       let tempNonce = 0;
       let shaString;
@@ -47,10 +45,9 @@ function Block() {
         }
         tempNonce++;
       }
-      console.log(11);
       dispatch({
         type: 'MINING_FINISHED',
-        payload: { updateSha: shaString, updateNonce: tempNonce.toString() },
+        payload: { updateSha: shaString, updateNonce: tempNonce },
       });
     }
   }, [buttonLoading]);

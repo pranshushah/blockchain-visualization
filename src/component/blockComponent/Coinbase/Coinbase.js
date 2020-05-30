@@ -1,18 +1,15 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
+import CoinbaseContainer from './CoinBaseContainer/CoinbaseContainer';
 
 function Coinbase() {
-  const style = {
-    borderBottom: '2px solid #dedede',
-    fontSize: '3rem',
-    textAlign: 'center',
-    margin: '10px 20%',
-  };
-  return (
-    <Container>
-      <h1 style={style}>Coming Soon</h1>
-    </Container>
-  );
+  const peers = ['Pranshu', 'Satoshi', 'Vitalik'];
+
+  const CoinbaseBlockChain = peers.map((peer, index) => {
+    return <CoinbaseContainer heading={`Peer ${peer}`} key={index} />;
+  });
+
+  return <Container>{CoinbaseBlockChain}</Container>;
 }
 
 export default Coinbase;

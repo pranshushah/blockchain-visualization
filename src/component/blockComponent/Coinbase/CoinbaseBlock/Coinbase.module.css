@@ -1,0 +1,73 @@
+.Heading {
+  border-bottom: 2px solid #dedede;
+  font-size: 2.5rem;
+}
+
+.Root {
+  margin: auto;
+  display: inline-block;
+  max-width: 600px;
+  min-width: 380px;
+}
+.Content {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.TopDataContainer * {
+  vertical-align: top;
+}
+
+.DataContainer * {
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.txContainer * {
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.MainTxContainer {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.NumberArea {
+  width: 100%;
+  cursor: not-allowed;
+  opacity: 0.8 !important;
+}
+
+.NonceArea {
+  width: 100%;
+  cursor: not-allowed;
+  opacity: 0.8 !important;
+}
+
+.PrevHashArea {
+  width: 100%;
+  cursor: not-allowed;
+  opacity: 0.8 !important;
+}
+
+.CoinbaseInput {
+  display: inline-block;
+  width: 30%;
+}
+.HashArea {
+  width: 100%;
+  cursor: not-allowed;
+  opacity: 0.8 !important;
+}
+
+.Label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.Mine {
+  margin: 15px 0px 0px 0px !important;
+  padding: 10px 30px 10px 30px !important;
+}

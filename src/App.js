@@ -44,8 +44,8 @@ function App() {
           <Route exact path='/distributed'>
             <LazyDistributedBlockChain />
           </Route>
-          <Route>
-            <LazyCoinBase path='/coinbase' />
+          <Route path='/coinbase' exact>
+            <LazyCoinBase />
           </Route>
           <Route path='/' exact>
             <Redirect to='/hash' />
