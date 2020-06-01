@@ -17,7 +17,6 @@ function CoinbaseBlock({
   onMineClicked,
   dirty,
 }) {
-  console.log('boom');
   const [buttonLoading, updatebuttonLoading] = useState(false);
   function mineClickHandler() {
     updatebuttonLoading(true);
