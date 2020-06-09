@@ -7,6 +7,7 @@ import Spinner from '../../Spinner/Spinner';
 import sha256 from 'crypto-js/sha256';
 import Styles from './Block.module.css';
 import { blockReducer } from './blockReducer';
+import { Helmet } from 'react-helmet';
 
 function Block() {
   const [state, dispatch] = useReducer(blockReducer, {
@@ -54,6 +55,20 @@ function Block() {
 
   return (
     <Container style={{ marginTop: '2%' }}>
+      <Helmet>
+        <title>block</title>
+        <meta
+          name='description'
+          content={
+            'you can visualize how blocks are mined and if change the content it will show error '
+          }
+        />
+        <meta
+          name='keywords'
+          content='visualization blocks,blockchain,mining,nonce'
+        />
+        <meta name='author' content='pranshu shah' />
+      </Helmet>
       {pageLoading ? (
         <Spinner />
       ) : (

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import {
   Container,
   Card,
@@ -22,6 +23,15 @@ function Hash() {
 
   return (
     <Container>
+      <Helmet>
+        <title>Hash visualization</title>
+        <meta
+          name='description'
+          content={"you type anthing you want and it's hash will be caluculate"}
+        />
+        <meta name='keywords' content='calculte hash,hash visualization' />
+        <meta name='author' content='pranshu shah' />
+      </Helmet>
       <h1 className={Styles.Heading}>Hash:-</h1>
       <Card className={Styles.Root} centered>
         <CardContent className={Styles.Content}>

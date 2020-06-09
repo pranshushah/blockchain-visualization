@@ -13,7 +13,7 @@ const LazyHash = lazy(() => import('./component/blockComponent/Hash/Hash'));
 const LazyBlock = lazy(() => import('./component/blockComponent/Block/Block'));
 const LazyBlockChain = lazy(() =>
   import(
-    './component/blockComponent/BlockChain/BlockChainContainer/BlockChainContainer'
+    './component/blockComponent/BlockChain/BlockChainContainer/blockChainRender'
   ),
 );
 const LazyDistributedBlockChain = lazy(() =>
