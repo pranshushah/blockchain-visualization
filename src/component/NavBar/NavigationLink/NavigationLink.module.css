@@ -8,7 +8,8 @@
 }
 
 .linkContainer:hover {
-  background-color: #57a8df;
+  background-color: #277fb9;
+  color: rgb(226, 226, 226);
 }
 
 .linkContainer * {
@@ -17,6 +18,19 @@
   width: 100%;
   text-align: center;
   min-height: 100%;
-  padding-top: 10%;
   color: rgb(226, 226, 226);
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {
+  .linkContainer * {
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .linkContainer * {
+    padding: 8px;
+    font-size: 12px;
+  }
 }

@@ -2,13 +2,11 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  min-height: 10vh;
-  background: #1797ec;
+  background: #0364a5;
 }
 
 .navLinks {
   display: flex;
-  min-height: 10vh;
   justify-content: center;
   width: 90%;
   align-items: stretch;
@@ -16,5 +14,14 @@
 
 .active {
   border-bottom: 5px solid rgb(226, 226, 226);
-  background-color: #57a8df;
+  background-color: #308bc7;
+}
+
+@media only screen and (max-width: 767px) {
+  .navLinks {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 100;
+    align-items: stretch;
+  }
 }
