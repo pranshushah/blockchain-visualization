@@ -2,7 +2,6 @@ import React, { useEffect, useReducer } from 'react';
 import sha256 from 'crypto-js/sha256';
 import BlockChainBlock from '../BlockChainBlock/BlockChainBlock';
 import Spinner from '../../../Spinner/Spinner';
-import { Helmet } from 'react-helmet';
 import Styles from './BlockChainContainer.module.css';
 
 function blockChainReducer(state, action) {

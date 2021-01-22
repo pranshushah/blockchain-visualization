@@ -4,13 +4,11 @@
 }
 
 .Root {
-  margin: auto;
   display: inline-block;
   max-width: 600px;
-  min-width: 300px;
 }
 .Content {
-  padding: 5px;
+  padding: 12px;
   font-size: 1rem;
 }
 

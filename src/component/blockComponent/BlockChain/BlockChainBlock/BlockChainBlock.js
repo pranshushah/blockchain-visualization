@@ -43,10 +43,12 @@ function Block({
     <Card
       className={Styles.Root}
       variant='outlined'
-      style={{ marginLeft: '7px', marginRight: '7px' }}>
+      style={{ marginLeft: '7px', marginRight: '7px' }}
+    >
       <CardContent
         className={Styles.Content}
-        style={{ backgroundColor: dirty ? '#FFBABA' : '#90caf9' }}>
+        style={{ backgroundColor: dirty ? '#FFBABA' : '#90caf9' }}
+      >
         <div className={Styles.TopDataContainer}>
           <Input
             label={'Number'}
@@ -96,7 +98,8 @@ function Block({
           secondary
           loading={buttonLoading}
           size='large'
-          onClick={mineClickHandler}>
+          onClick={mineClickHandler}
+        >
           Mine
         </Button>
       </CardContent>
