@@ -1,12 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Styles from './NavBar.module.css';
 import NavigationLink from './NavigationLink/NavigationLink';
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
+  const [burgerClicked, setBurgerClicked] = useState(false);
+
   return (
-    <nav>
-      <ul className={Styles.navLinks}>
+    <nav className={Styles.nav}>
+      <div
+        className={Styles.humburgercontainer}
+        onClick={() => {
+          setBurgerClicked((val) => !val);
+        }}
+      >
+        <div
+          className={
+            burgerClicked
+              ? [Styles.bar, Styles.changeLine].join(' ')
+              : Styles.bar
+          }
+        />
+        <div className={Styles.bar} />
+        <div
+          className={
+            burgerClicked
+              ? [Styles.bar, Styles.changeLine].join(' ')
+              : Styles.bar
+          }
+        />
+      </div>
+      <ul
+        className={
+          burgerClicked
+            ? [Styles.navLinks, Styles.showInmobile].join(' ')
+            : Styles.navLinks
+        }
+      >
         <NavigationLink>
           <NavLink
             className={Styles.link}
