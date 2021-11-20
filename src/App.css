@@ -5,3 +5,11 @@
   font-family: 'Source Sans Pro', Century Gothic, CenturyGothic, AppleGothic,
     sans-serif;
 }
+
+.ui.card:last-child {
+  margin: 1em 7px !important;
+}
+
+.ui.card:first-child {
+  margin: 1em 7px !important;
+}
